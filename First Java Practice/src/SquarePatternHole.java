@@ -5,7 +5,7 @@ public class SquarePatternHole {
                 for (int col = 0; col < size; col++) {
                     if (row == 0 || row == size - 1
                             || col == 0 || col == size - 1) {
-                        System.out.print(row+col + " ");
+                        System.out.print("# ");
                     }
                     else {
                         System.out.print("  ");
