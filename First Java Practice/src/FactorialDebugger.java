@@ -10,14 +10,13 @@ public class FactorialDebugger {
         if (n < 1){
             System.out.print("Enter a non negative integer...");
         }
-        else{
+        else {
             while(n > 0){
                 fact *= n;
                 n -= 1;
             }
             System.out.printf("The factorial of %d is %d: " , temp, fact);
         }
-
         input.close();
     }
 }
