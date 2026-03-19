@@ -26,18 +26,19 @@ public class ClassIntroduction {
         play();
         System.out.println();
 
-        //Call instance method
+
 //        System.out.println("Calling instance methods");
         System.out.println("Student 2");
         Student student2 = new Student(); // naming object
+        //Call instance method
         student2.studentName("Smith");
-        student2.studentGrade(3.7);
+        student2.studentGrade(3.71);
 
 
     }
     //static methods
     public static void dogName(String name){
-        System.out.println("Dog name is " + name);
+        System.out.printf("Dog name is %s" , name);
     }
     public static void bark(){
         System.out.println("I am barking");
@@ -55,10 +56,10 @@ class Student {
     //Instance or non-static method
     //Instance method to get student name
     public void studentName(String name){
-        System.out.println("My name is " + name);
+        System.out.printf("My name is %s" , name);
     }
     //Instance method to get student grade
     public void studentGrade(double grade){
-        System.out.println("Your grade is " + grade);
+        System.out.printf("Your grade is %.2f" , grade);
     }
 }
