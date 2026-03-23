@@ -38,7 +38,7 @@ public class ClassIntroduction {
     }
     //static methods
     public static void dogName(String name){
-        System.out.printf("Dog name is %s" , name);
+        System.out.printf("Dog name is %s%n" , name);
     }
     public static void bark(){
         System.out.println("I am barking");
@@ -56,7 +56,7 @@ class Student {
     //Instance or non-static method
     //Instance method to get student name
     public void studentName(String name){
-        System.out.printf("My name is %s" , name);
+        System.out.printf("My name is %s%n" , name);
     }
     //Instance method to get student grade
     public void studentGrade(double grade){
