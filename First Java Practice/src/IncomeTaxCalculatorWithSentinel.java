@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class IncomeTaxCalculatorWithSentinel {
      public static double taxCalculatorWithSentinel(double income){
-//         double first20K = 0.0;
+//         double first20K = 0.0;in
          double second20K = 0.1;
          double third20k = 0.2;
          double fourth20K = 0.3;

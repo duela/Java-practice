@@ -55,7 +55,6 @@ public class ConstructorMethodIntroduction {
         Vehicle ford = new Vehicle("ford", "Explorer", 2020);
         // Starting
         ford.start();
-
         // Second instance constructor method....
         // create object method with default constructor
         Constructor101 method1 = new Constructor101();
