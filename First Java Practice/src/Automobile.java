@@ -1,10 +1,12 @@
 public class Automobile{
+    // instance variable
     String make;
     String model;
     String colour;
     int year;
 
     //Constructor method with parameters
+    //MANDATORY: The object cannot exist without these
     public Automobile(String make, String model, String colour, int year){
         this.make = make;
         this.model = model;

@@ -1,4 +1,4 @@
-public class Car{
+public class  Car{
     String make;
     String model;
     String colour;
