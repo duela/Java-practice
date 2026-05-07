@@ -30,7 +30,7 @@ public class Encapsulation {
         this.countryCode = countryCode;
     }
 
-    public void setName(String name) {
+    public void  setName(String name) {
         this.name = name;
     }
 

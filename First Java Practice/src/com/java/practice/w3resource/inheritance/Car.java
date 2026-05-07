@@ -1,9 +1,10 @@
 package com.java.practice.w3resource.inheritance;
 
-public class Cat extends Animal {
+public class Car extends Vehicle{
     // Use the @Override annotation to indicate that this method overrides a method in the superclass
     @Override
-    public void makeSound() {
-        System.out.println("barking...");
+    public void drive(){
+        System.out.println("Repairing a car");
     }
+
 }
