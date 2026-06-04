@@ -3,6 +3,9 @@ public class LoopingExampleOne {
         for (int i = 1; i <10 ; i = i*2){
             System.out.println("Hello world: " + i + " ");
         }
+
+        System.out.println("print even numbers ");
+
         // print even numbers
         for (int i = 1; i <= 20; i++) {
             if (i % 2 == 1) {
@@ -11,8 +14,8 @@ public class LoopingExampleOne {
             System.out.println(i);
         }
 
-
-        // print out numbers
+        System.out.println("print odd numbers ");
+        // print odd numbers
         for (int i = 1; i <= 20; i++) {
             if (i % 2 == 0) {
                 continue;
