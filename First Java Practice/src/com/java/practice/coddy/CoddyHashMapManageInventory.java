@@ -14,30 +14,25 @@ public class CoddyHashMapManageInventory {
     public static HashMap<String, Object> processHashMap(HashMap<String, Double> products) {
         // Write your code here
         HashMap<String, Object> result = new HashMap<>();
-        HashMap<String, Double> filter = new HashMap<>();
+        HashMap<String, Double> filteredProducts = new HashMap<>();
         double sum = 0;
-        double highestPrice = 0;
+        double highestPrice = Double.NEGATIVE_INFINITY;
         String highestProduct = "";
-        boolean isEmpty = products.isEmpty();
         for (Map.Entry<String, Double> data : products.entrySet()){
             sum += data.getValue();
-            if (highestPrice <= data.getValue()) {
+            if (data.getValue() > highestPrice) {
                 highestPrice = data.getValue();
                 highestProduct = data.getKey();
             }
             if (data.getValue() > 50) {
-                filter.put(data.getKey(), data.getValue());
+                filteredProducts.put(data.getKey(), data.getValue());
             }
 
         }
-        double averageProduct = sum / products.size();
-
-        if (isEmpty) {
-            averageProduct = 0;
-        }
+        double averageProduct = products.isEmpty() ? 0.0  : sum / products.size();
         result.put("Average", averageProduct);
         result.put("Highest", highestProduct);
-        result.put("Filtered", filter);
+        result.put("Filtered", filteredProducts);
 
         return result;
     }
